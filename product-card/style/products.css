@@ -1,0 +1,14 @@
+.products {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 45px;
+}
+
+
+.products_item {
+    width: 340px;
+    background-color: #F7F7FA;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px #cacaca;
+}
