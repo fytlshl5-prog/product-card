@@ -1,4 +1,4 @@
-.catalog_container {
+.catalog__container {
     background-image: url(../images/bg.png);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -6,7 +6,7 @@
 }
 
 
-.catalog_title {
+.catalog__title {
     margin-top: 220px;
     margin-bottom: 110px;
 }

@@ -3,13 +3,13 @@
     width: 100%;
 }
 
-.card_image {
+.card__image {
     display: block;
     height: auto;
     width: 100%;
 }
 
-.card_category {
+.card__category {
     display: block;
     font-size: 13px;
     line-height: 18px;
@@ -19,7 +19,7 @@
 }
 
 
-.card_discription {
+.card__description {
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
@@ -28,7 +28,7 @@
 }
 
 
-.card_name {
+.card__name {
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
@@ -36,7 +36,7 @@
     color: #515076;
 }
 
-.card_name-price {
+.card__name-price {
     font-style: Regular;
     font-size: 20px;
     line-height: 24px;
@@ -48,7 +48,7 @@
     align-items: center;
 }
 
-.card_price {
+.card__price {
     font-weight: 400;
     font-style: Regylar;
     font-size: 20px;

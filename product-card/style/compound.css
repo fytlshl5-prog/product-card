@@ -1,11 +1,11 @@
-.compound_name {
+.compound__name {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #515076;
 }
 
-.compound_list {
+.compound__list {
     font-weight: 400;
     font-style: Regular;
     font-size: 13px;
