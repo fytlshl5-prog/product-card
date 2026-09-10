@@ -1,0 +1,10 @@
+.clear-list {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 40px auto;
+    max-width: 1200px;
+}

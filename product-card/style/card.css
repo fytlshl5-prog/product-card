@@ -1,0 +1,60 @@
+.card {
+    padding: 25px;
+    width: 100%;
+}
+
+.card__image {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.card__category {
+    display: block;
+    font-size: 13px;
+    line-height: 18px;
+    color: #8c8c8c;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+
+.card__description {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #515076;
+}
+
+
+.card__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    color: #515076;
+}
+
+.card__name-price {
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #515076;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__price {
+    font-weight: 400;
+    font-style: Regylar;
+    font-size: 20px;
+    letter-spacing: 0%;
+    color: #515076;
+    line-height: 24px;
+    display: block;
+    text-align: right;
+}
