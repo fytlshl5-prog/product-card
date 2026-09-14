@@ -1,0 +1,91 @@
+.active-color {
+    background-color: rgb(171, 216, 179) !important;
+    color: rgb(69, 170, 153);
+    font-weight: 700;
+    border-radius: 16px;
+    width: 260px;
+    height: 30px;
+    font-family: "Montserrat" , sans-serif;
+    border: 0px;
+    box-shadow: 2px 2px 5px 0px #868585;
+}
+
+#change-color-first-card {
+    background-color: rgb(245, 255, 188);
+    border-radius: 16px;
+    width: 260px;
+    height: 30px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 700;
+    color: rgb(226, 168, 43);
+    border: 0px;
+    box-shadow: 2px 2px 5px 0px #868585;
+}
+
+#change-color-all-cards {
+    background-color: #515076;
+    color: #fafafc;
+    border-radius: 16px;
+    width: 260px;
+    height: 30px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 700;
+    border: 0px;
+    box-shadow: 2px 2px 5px 0px #868585;
+}
+
+#open-google {
+    background-color: #515076;
+    color: #fafafc;
+    border-radius: 16px;
+    width: 260px;
+    height: 30px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 700;
+    border: 0px;
+    box-shadow: 2px 2px 5px 0px #868585;
+}
+
+#output-console-log  {
+    background-color: #515076;
+    color: #fafafc;
+    border-radius: 16px;
+    width: 260px;
+    height: 30px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 700;
+    border: 0px;
+    box-shadow: 2px 2px 5px 0px #868585;
+}
+
+
+#button-message {
+    background-color: #515076;
+    color: #fafafc;
+    border-radius: 16px;
+    width: 260px;
+    height: 30px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 700;
+    border: 0px;
+    box-shadow: 2px 2px 5px 0px #868585;
+}
+
+#button-toggle {
+    background-color: #515076;
+    color: #fafafc;
+    border-radius: 16px;
+    width: 260px;
+    height: 30px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 700;
+    border: 0px;
+    box-shadow: 2px 2px 5px 0px #868585;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}

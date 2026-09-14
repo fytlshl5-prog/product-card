@@ -12,11 +12,25 @@
     <link rel="stylesheet" href="./style/card.css" />
     <link rel="stylesheet" href="./style/products.css" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/buttons.css" />
   </head>
   <body>
     <main class="catalog">
       <div class="container catalog__container">
-        <h1 class="title">Выбери свой продукт</h1>
+        <h1 class="main-title">Выбери свой продукт</h1>
+
+        <div class="buttons">
+          <button id="change-color-first-card">
+            Сменить цвет первой карточки
+          </button>
+          <button id="change-color-all-cards">
+            Сменить цвет всех карточек
+          </button>
+          <button id="open-google">Открыть страницу Google.com</button>
+          <button id="output-console-log">Вывести консоль лог</button>
+          <button id="button-message">Показать сообщение</button>
+          <button id="button-toggle">Кнопка переключатель</button>
+        </div>
 
         <ul class="products clear-list">
           <li class="products__item card">
@@ -137,5 +151,6 @@
         </ul>
       </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
