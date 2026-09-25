@@ -128,6 +128,8 @@ const moviesContinuation = [
   },
 ];
 
+//Объединение двух массивов в один
+
 const merginFilm = [...movies, ...moviesContinuation];
 
 //Задание 10
@@ -139,5 +141,5 @@ function bestRating(moviesArray) {
     };
   });
 }
+//Вызов функции
 const updateMovies = bestRating(merginFilm);
-console.log(updateMovies);
