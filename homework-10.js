@@ -19,7 +19,7 @@ function getCards() {
   }
   const count = parseInt(userInput, 10);
 
-  if (!isNaN(count) && count >= 1 && count <= 5) {
+  if (Number.isInteger(count) && count >= 1 && count <= 5) {
     return count;
   } else {
     alert("Нужно ввести целое число от 1 до 5");
@@ -38,7 +38,8 @@ function renderCards(productsArray) {
         product.description;
       productClone.querySelector(".product-compoundList").textContent =
         product.compoundList.join(",");
-      productClone.querySelector(".product-price").textContent = product.price;
+      productClone.querySelector(".product-price").textContent =
+        product.price + "  ₽";
       const imgElement = productClone.querySelector(".product-image");
       if (imgElement) {
         imgElement.src = product.image;

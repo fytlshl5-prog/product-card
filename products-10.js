@@ -9,7 +9,8 @@ export const products = [
       "витамины С, А, РР, В И Е",
       "солнцезащитные компоненты",
     ],
-    price: "2 750 ₽",
+    price: "2 750",
+    productCourse: "₽",
     image: "./images/photo 1.png",
   },
 
@@ -19,7 +20,8 @@ export const products = [
     name: "Увлажняющая маска",
     description: "Способствует удерживанию влаги в верхних слоях кожи.",
     compoundList: ["воски", "минералы", "масла"],
-    price: "3 500 ₽",
+    price: "3 500",
+    productCourse: "₽",
     image: "./images/photo 2.png",
   },
 
@@ -33,7 +35,8 @@ export const products = [
       "витамины С, А, РР, В И Е",
       "солнцезащитные компоненты",
     ],
-    price: "1 650 ₽",
+    price: "1 650",
+    productCourse: "₽",
     image: "./images/photo 3.png",
   },
 
@@ -43,7 +46,8 @@ export const products = [
     name: "Подарочный набор №1",
     description: "Набор, состоящий из увлажняющего крема и маски.",
     compoundList: ["воски", "минералы", "масла"],
-    price: "4 750 ₽",
+    price: "4 750",
+    productCourse: "₽",
     image: "./images/photo 4.png",
   },
 
@@ -54,7 +58,8 @@ export const products = [
     description:
       " Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.",
     compoundList: ["воски", "минералы", "масла"],
-    price: "7 520 ₽",
+    price: "7 520",
+    productCourse: "₽",
     image: "./images/photo 5.png",
   },
 ];
