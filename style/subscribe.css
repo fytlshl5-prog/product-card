@@ -1,0 +1,61 @@
+ @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat" , sans-serif;
+}
+
+.subscribe--title {
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+}
+
+.subscribe--row {
+  width: 477px;
+  height: 103px;
+  transform: translateY(-90px);
+  margin: 0 190px 90px 0; 
+}
+
+
+.subscribe--form {
+ display: inline-flex;
+background-color: #ffffff;
+padding: 6px 15px;
+border-radius: 12px; 
+align-items: center;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 477px;
+  height: 61px;
+}
+
+.subscribe--button {
+border: none;
+background: none;
+font-size: 16px;
+color: #000000;
+cursor: pointer;
+padding: 10px 10px 10px 20px;
+position: relative;
+transition: color 0.2s;
+font-size: 500;
+position: relative;
+left: 120px;
+
+}
+.subscribe--input {
+background-color: #ffff;
+padding: 10px 15px;
+outline: none;
+border: none;
+box-shadow: none;
+}
+
+.style--registration--text {
+    color: #ffff;
+}
