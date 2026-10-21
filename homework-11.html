@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 11</title>
+    <link rel="stylesheet" href="./style/subscribe.css" />
+    <link rel="stylesheet" href="./style/style-11.css">
+    <link rel="stylesheet" href="./style/buttons.css">
+    <link rel="stylesheet" href="./style/modal.css">
+  </head>
+  <body class="style--header">
+    <div class="style--body">
+    <div class="style--contacts">
+      <h2 class="style--product-card">Product Cards</h2>
+      <p class="style--comment">У Нас Самые Лучшие Продукты Для Кожи!</p>
+      <a href="">
+        <img class="style--image" src="./images/tg.png" alt="" />
+        <img class="style--image"  src="./images/vk.png" alt="" />
+      </a>
+    </div>
+  <div class="subscribe--row">
+        <h3 class="subscribe--title">Подпишись на наши акции:</h3>
+    <form action="" method="get" class="subscribe--form">
+        <input  class="subscribe--input" type="email"  placeholder="Введи Email..." />
+      <button type="submit" class="subscribe--button">|&nbsp Подписаться</button>
+      
+    </form>
+    <button id="open--btn" class="button--registration">Регистрация</button>
+    
+</div>
+
+    <nav class="style--nav">
+      <h3 class="style--text">Быстрые ссылки</h3>
+      <ul class="style--link">
+        <li class="style--variants"><a href="#" style="color: white;">Главная</a></li>
+        <li class="style--variants"><a href="#" style="color: white;">Магазин</a></li>
+        <li class="style--variants"><a href="#" style="color: white;">Контакты</a></li>
+      </ul>
+    </nav> 
+     <article class="style--article">
+      <footer>
+        <p>
+            <hr class="style--underscore">
+          <a class="style--adress">www.product-cards.com©all right reserve</a>
+        </p>
+      </footer>
+    </article>
+    
+    <div class="modal--overLay">
+      <div class="modal--content"> 
+        <form id="modal--registration" class="modal--form">
+                  <button type="button" id="close--btn">&times;</button>
+                  <h2 class="style--registration">Р Е Г И С Т Р А Ц И Я</h2>
+
+                <div class="modal--form--group">
+                    <label for="modal-first-name" class="style--registration--text">Имя:</label>
+                    <input type="text" id="modal--first--name" name="modal--name" placeholder="Ваше имя" required>
+                </div>
+
+                <div class="modal--form--group">
+                    <label for="modal-first-surname" class="style--registration--text">Фамилия:</label>
+                    <input type="text" id="modal--first--surname" name="modal--surname" placeholder="Ваша фамилия" required>
+                </div>
+
+                <div class="modal--form--group">
+                    <label for="modal--first--DateOfBirth" class="style--registration--text">Дата рождения:</label>
+                    <input type="date" id="modal--first--DateOfBirth" name="modal--DateOfBirth" required>
+                </div>
+
+                <div class="modal--form--group">
+                    <label for="modal--first--DateOfBirth" class="style--registration--text">Логин:</label>
+                    <input type="password" id="modal--first--login" name="modal--login" required placeholder="Ваш логин">
+                </div>
+
+                <div class="modal--form--group">
+                    <label for="modal--first--password" class="style--registration--text">Пароль:</label>
+                    <input type="password" id="modal--first--password" name="modal--password" placeholder="Не более 6 символов" required>
+                </div>
+
+                <div class="modal--form--group">
+                    <label for="modal--first-repeated--password" class="style--registration--text">Повторите пароль:</label>
+                    <input type="password" id="modal--first--repeated--password" name="modal--repeated--password" placeholder="Не более 6 символов" required>
+                </div>
+
+                <button type="submit" class="btn--submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+    <script type="module" src="homework-11.js"></script>
+  </body>
+ 
+    
+</html>
