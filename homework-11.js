@@ -18,10 +18,10 @@ form.addEventListener("submit", function (e) {
 let user = null;
 
 document.addEventListener("DOMContentLoaded", () => {
-  const openBtn = document.getElementById("open--btn");
-  const overlay = document.querySelector(".modal--overLay");
-  const closeBtn = document.getElementById("close--btn");
-  const form = document.getElementById("modal--registration");
+  const openBtn = document.getElementById("open__btn");
+  const overlay = document.querySelector(".modal__overLay");
+  const closeBtn = document.getElementById("close__btn");
+  const form = document.getElementById("modal__registration");
 
   if (!openBtn || !overlay || !closeBtn || !form) {
     console.error("Элементы не найдены");
@@ -29,24 +29,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   openBtn.addEventListener("click", () =>
-    overlay.classList.add("modal--showed"),
+    overlay.classList.add("modal__showed"),
   );
   closeBtn.addEventListener("click", () =>
-    overlay.classList.remove("modal--showed"),
+    overlay.classList.remove("modal__showed"),
   );
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && overlay.classList.contains("modal--showed")) {
-      overlay.classList.remove("modal--showed");
+    if (e.key === "Escape" && overlay.classList.contains("modal__showed")) {
+      overlay.classList.remove("modal__showed");
     }
   });
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const pass = document.getElementById("modal--first--password").value;
+    const pass = document.getElementById("modal__first__password").value;
     const confirm = document.getElementById(
-      "modal--first--repeated--password",
+      "modal__first__repeated__password",
     ).value;
 
     if (pass !== confirm || !form.checkValidity()) {
@@ -61,6 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     console.log("Успешная регистрация:", user);
-    overlay.classList.remove("modal--showed");
+    overlay.classList.remove("modal__showed");
   });
 });

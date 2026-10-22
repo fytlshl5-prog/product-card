@@ -90,7 +90,7 @@
   justify-content: center;
 }
 
-.button--registration {
+.button__registration {
     border-radius: 25px;
     width: 477px;
     height: 60px;
@@ -103,7 +103,7 @@
     cursor: pointer;
 }
 
-.close--btn {
+.close__btn {
     position: absolute;
     top: 12px;
     right: 16px;
@@ -115,7 +115,7 @@
      color: #333;
 }
 
-.btn--submit {
+.btn__submit {
     width: 100%;
     padding: 10px;
     cursor: pointer;
@@ -126,7 +126,7 @@
     font-weight: 800;
 }
 
-#close--btn {
+#close__btn {
     background-color: rgb(255, 103, 133);
     color: #ffff;
     font-size: 20px;
