@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./style/products.css" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/buttons.css" />
+    <link rel="stylesheet" href="./style/modal.css" />
   </head>
   <body>
     <main class="catalog">
@@ -30,6 +31,13 @@
           <button id="output-console-log">Вывести консоль лог</button>
           <button id="button-message">Показать сообщение</button>
           <button id="button-toggle">Кнопка переключатель</button>
+          <button
+            class="button-registration"
+            id="registration-btn"
+            type="button"
+          >
+            Заказать продукт
+          </button>
         </div>
 
         <ul class="products clear-list">
@@ -151,6 +159,76 @@
         </ul>
       </div>
     </main>
-    <script src="main.js"></script>
+
+    <div class="modal-window" id="register-modal">
+      <div class="modal-window__overlay"></div>
+      <div class="modal-window__content">
+        <form class="modal__form" id="register-form" action="">
+          <button
+            class="close__modal"
+            type="button"
+            aria-label="Закрыть модальное окно"
+          >
+            &times;
+          </button>
+          <h2 class="modal__title">ОФОРМЛЕНИЕ ЗАКАЗА</h2>
+          <p class="style__text">Укажите свои данные и выбранный продукт</p>
+
+          <div class="input__style">
+            <label class="modal__label" for="user-name">Имя</label>
+            <input
+              type="text"
+              id="modal__name"
+              name="name"
+              placeholder="Введите имя"
+              required
+              aria-required="true"
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="input__style">
+            <label class="modal__label" for="user-number">Телефон</label>
+            <input
+              type="tel"
+              id="modal__number"
+              name="user-number"
+              placeholder="+7(999)999-99-99"
+              pattern="^\+?[0-9\s\-\(\)]{10,}$"
+              required
+            />
+          </div>
+          <div class="registration-form_field">
+            <fieldset class="style__product-variants">
+              <legend>
+                <label class="modal__label"> Что выберешь?</label>
+              </legend>
+              <label class="product__style">
+                <input type="radio" name="product1" checked />
+                Увлажняющий мусс
+              </label>
+              <label class="product__style">
+                <input type="radio" name="product2" />
+                Увлажняющая маска
+              </label>
+              <label class="product__style">
+                <input type="radio" name="product3" />
+                Гель для умывания
+              </label>
+              <label class="product__style">
+                <input type="radio" name="product4" />
+                Подарочный набор №1
+              </label>
+              <label class="product__style">
+                <input type="radio" name="product5" />
+                Подарочный набор №5
+              </label>
+            </fieldset>
+          </div>
+          <button type="submit" class="button__submit">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

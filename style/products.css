@@ -12,3 +12,12 @@
     border-radius: 10px;
     box-shadow: 2px 2px 5px 0px #cacaca;
 }
+
+.product__style {
+    color: #565674;
+    display: inline-block;
+    font-weight: 800;
+    width: 255px;
+    height: 50px;
+    padding: 35px 10px 0px 10px;
+}
