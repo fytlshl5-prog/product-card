@@ -1,72 +1,46 @@
-//Покраска всех карточек
+import { Modal } from "./modal.js";
+import { Form } from "./form.js";
+import { Buttons } from "./buttons.js";
 
-const productCards = document.querySelectorAll(".products__item");
-const changeColorAllCardsButton = document.querySelector(
-  "#change-color-all-cards",
-);
-const pinkColorHash = "#c3c2db";
-const yellowColorHash = "rgb(245, 255, 188)";
-
-changeColorAllCardsButton.addEventListener("click", () => {
-  productCards.forEach((card) => (card.style.backgroundColor = pinkColorHash));
-});
-
-//Покраска первой карточки
-
-const firstProductCard = document.querySelector(".products__item");
-const changeColorFirstCardButton = document.querySelector(
-  "#change-color-first-card",
-);
-
-changeColorFirstCardButton.addEventListener("click", () => {
-  firstProductCard.style.backgroundColor = yellowColorHash;
-});
-
-//Открыть google
-
-const openGoogleButton = document.querySelector("#open-google");
-
-openGoogleButton.addEventListener("click", openGoogle);
-
-function openGoogle() {
-  const answer = confirm("Вы действительно хотите открыть Google?");
-
-  if (answer === true) {
-    window.open("https://www.google.com");
-  } else {
-    return;
+class Buyer {
+  constructor(brand, size) {
+    this.brand = brand;
+    this.size = size;
+  }
+  showInfo() {
+    console.log(`Я покупаю платье от ${this.brand}, ${this.size} размера!`);
   }
 }
 
-//Вывод консоль лог
+const buyer1 = new Buyer("Chanel", 42);
+const buyer2 = new Buyer("Prada", 44);
+buyer1.showInfo();
+buyer2.showInfo();
 
-const outputLogButton = document.querySelector("#output-console-log");
+//////////////////////////////////////////////////////////
 
-outputLogButton.addEventListener("click", () => outputConsoleLog("Дз №6"));
+const registerModal = new Modal("register-modal");
+const registerForm = new Form("register-form");
 
-function outputConsoleLog(message) {
-  alert(message);
-  console.log(message);
-}
+const registrationBtn = document.getElementById("registration-btn");
 
-//Вывод консоль при наведении на заголовок
-function printAndAlert(text) {
-  console.log(text);
-  alert(text);
-}
-
-const messageButton = document.querySelector("#button-message");
-messageButton.addEventListener("click", function () {
-  printAndAlert("Привет! Я универсальная функция!");
+registrationBtn.addEventListener("click", () => {
+  registerModal.open();
 });
 
-const pageTitle = document.querySelector(".main-title");
-pageTitle.addEventListener("mouseover", function () {
-  console.log(event.target.textContent);
-});
+registerForm.form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-//Переключатель
-const toggleButton = document.querySelector("#button-toggle");
-toggleButton.addEventListener("click", function () {
-  toggleButton.classList.toggle("active-color");
+  if (!registerForm.isFormValid()) {
+    alert("Форма не валидна,заполните корректно");
+    return;
+  }
+  registerModal.close();
+
+  const formValues = registerForm.getFormValues();
+
+  registerForm.reset();
+  registerModal.close();
+
+  alert("Заказ отправлен! Спасибо!");
 });

@@ -90,7 +90,7 @@
   justify-content: center;
 }
 
-.button--registration {
+.button__registration {
     border-radius: 25px;
     width: 477px;
     height: 60px;
@@ -103,7 +103,7 @@
     cursor: pointer;
 }
 
-.close--btn {
+.close__btn {
     position: absolute;
     top: 12px;
     right: 16px;
@@ -115,7 +115,7 @@
      color: #333;
 }
 
-.btn--submit {
+.btn__submit {
     width: 100%;
     padding: 10px;
     cursor: pointer;
@@ -126,11 +126,37 @@
     font-weight: 800;
 }
 
-#close--btn {
+#close__btn {
     background-color: rgb(255, 103, 133);
     color: #ffff;
     font-size: 20px;
     border-radius: 8px;
     border-color: rgb(212, 91, 115);
     float: right;
+}
+
+#registration-btn {
+    background-color: #515076;
+    color: #fafafc;
+    border-radius: 16px;
+    width: 260px;
+    height: 30px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 700;
+    border: 0px;
+    box-shadow: 2px 2px 5px 0px #868585;
+}
+
+.button__submit {
+    border-radius: 15px;
+    height: 50px;
+    width: 200px;
+    margin: 30px 300px 30px 300px;
+    display: block;
+    font-weight: 700;
+    border: 0px;
+    box-shadow: 2px 2px 5px 0px #868585;
+    color: #707070;
+    font-weight: 800;
+    font-size: 15px;
 }
