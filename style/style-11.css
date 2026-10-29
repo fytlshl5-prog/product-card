@@ -1,4 +1,4 @@
-.style--header {
+.style__header {
 background-color: #3A3A3A;
 width: 100%;
 min-height: 100vh;
@@ -6,42 +6,42 @@ overflow-x: hidden;
 overflow-y: hidden;
 }
 
-.style--link {
+.style__link {
   list-style: none;
   padding-inline-start: 0px;
   transform: translateY(-90px);
 }
 
-.style--underscore {
+.style__underscore {
     width: 66px;
     height: 2px;
     background-color: #FFFFFF;
     margin: 0 auto 15px auto;
 }
 
-.style--adress {
+.style__adress {
     color: #FFFFFF;
     text-align: center;
 }
 
-.style--variants {
+.style__variants {
     margin-top: 15px;
 }
 
-.style--image {
+.style__image {
     margin: 20px 20px 30px 5px;
 }
 
-.style--text{
+.style__text{
     color: #FFFFFF;
     margin: 0 0 120px 0;
 }
-.style--product-card {
+.style__product-card {
     color: #FFFFFF;
     font-weight: 800;
 }
 
-.style--body {
+.style__body {
     display: flex;
     justify-content: space-between;
     gap: 300px;
@@ -49,16 +49,16 @@ overflow-y: hidden;
     margin: 150px 90px 150px 90px;
     }
 
-.style--comment {
+.style__comment {
     width: 409;
     height: 28;
     color: #FFFFFF;
 }
 
-.style--contacts {
+.style__contacts {
     transform: translateY(-90px);
 }
-.style--article {
+.style__article {
     position: absolute;
     margin: 400px 250px 0 -110px;
     width: 400px;
@@ -71,7 +71,7 @@ box-sizing: border-box
 
 }
 
-.style--registration {
+.style__registration {
     text-align: center;
     justify-content: center ;
     font-weight: 900;
@@ -79,7 +79,7 @@ box-sizing: border-box
     display: flex;
 }
 
-.style--nav {
+.style__nav {
     width: 178px;
     height: 147px;
     margin-bottom: 180px;

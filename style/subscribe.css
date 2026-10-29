@@ -9,13 +9,13 @@ body {
     font-family: "Montserrat" , sans-serif;
 }
 
-.subscribe--title {
+.subscribe__title {
     color: #FFFFFF;
     font-weight: 400;
     text-align: center;
 }
 
-.subscribe--row {
+.subscribe__row {
   width: 477px;
   height: 103px;
   transform: translateY(-90px);
@@ -23,7 +23,7 @@ body {
 }
 
 
-.subscribe--form {
+.subscribe__form {
  display: inline-flex;
 background-color: #ffffff;
 padding: 6px 15px;
@@ -34,7 +34,7 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   height: 61px;
 }
 
-.subscribe--button {
+.subscribe__button {
 border: none;
 background: none;
 font-size: 16px;
@@ -48,7 +48,7 @@ position: relative;
 left: 120px;
 
 }
-.subscribe--input {
+.subscribe__input {
 background-color: #ffff;
 padding: 10px 15px;
 outline: none;
@@ -56,6 +56,6 @@ border: none;
 box-shadow: none;
 }
 
-.style--registration--text {
+.style__registration--text {
     color: #ffff;
 }
