@@ -20,13 +20,16 @@ class Drink {
   }
 
   showInfo() {
-    return `Цена: ${this.price} руб. за напиток ${this.name} ${this.size}, температура ${this.#temperature}°C `;
+    return `Цена: ${this.price} руб. за напиток ${this.name} размера ${this.size}, температура ${this.#temperature}°C `;
   }
 
   serve() {
     console.log(`Готовим ваш ${this.name}...`);
-    this._prepare();
+    this.#prepare();
     console.log(`${this.name} готов! Приятного аппетита!`);
+  }
+  #prepare() {
+    console.log("Ваш напиток будет скоро готов... (^.^)");
   }
 }
 
@@ -37,7 +40,7 @@ class BableTea extends Drink {
     this.toppings = toppings;
   }
 
-  _prepare() {
+  #prepare() {
     console.log(
       ` -> Смешиваем шейк со вкусом "${this.taste}" и добавляем топпинг: ${this.toppings}`,
     );
@@ -51,7 +54,7 @@ class Tea extends Drink {
     this.typeTea = typeTea;
   }
 
-  _prepare() {
+  #prepare() {
     console.log(` -> Завариваем горячий чай и добавляем: ${this.typeTea}`);
     this.setTemperature(80);
   }
@@ -64,7 +67,7 @@ class ColdDrinks extends Drink {
     this.presenceOfCitrus = presenceOfCitrus;
   }
 
-  _prepare() {
+  #prepare() {
     console.log(" -> Наливаем газировку");
     if (this.presenceOfIce) console.log(" -> Добавляем лед!");
     this.setTemperature(5);
@@ -72,13 +75,13 @@ class ColdDrinks extends Drink {
 }
 
 class Coffee extends Drink {
-  constructor(name, size, price, typeMilk, tupeSyrup) {
+  constructor(name, size, price, typeMilk, typeSyrup) {
     super(name, size, price);
     this.typeMilk = typeMilk;
-    this.tupeSyrup = tupeSyrup;
+    this.typeSyrup = typeSyrup;
   }
 
-  _prepare() {
+  #prepare() {
     console.log(
       ` -> Варим эспрессо, добавляем молоко (${this.typeMilk}) и сироп (${this.tupeSyrup})`,
     );
