@@ -1,5 +1,5 @@
-const form = document.querySelector(".subscribe--form");
-const input = document.querySelector(".subscribe--input");
+const form = document.querySelector(".subscribe__form");
+const input = document.querySelector(".subscribe__input");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
