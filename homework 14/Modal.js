@@ -10,7 +10,6 @@ export class Modal {
     const closeButton = this.modal.querySelector("#modal-close-button");
     if (closeButton) {
       closeButton.addEventListener("click", () => this.close());
-    } else if (shouldCloseOnOverlay) {
     }
 
     if (shouldCloseOnOverlay && this.overlay) {
