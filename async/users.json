@@ -1,0 +1,29 @@
+{ 
+  "users" : [
+    {
+    "id" : "1",
+    "name": "Амина",
+    "surname": "Биляева",
+    "email" : "mochk@yandex.ru",
+    "age": "22 лет",
+    "image" : "./user.png"
+    },
+    {
+    "id" : "2",
+    "name": "Зейнеп",
+    "surname": "Наимова",
+    "email" : "katts@email.com",
+    "age": "20 лет",
+    "image" : "./user.png"
+    },
+    {
+    "id" : "3",
+    "name": "Ангелина",
+    "surname": "Самвелова",
+    "email" : "angelicc@gmail.com",
+    "age": "19 лет",
+    "image" : "./user.png"
+    }
+  ]
+}
+                       
