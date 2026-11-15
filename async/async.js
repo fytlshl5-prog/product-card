@@ -7,7 +7,7 @@ const cardTemplate = document.getElementById("card-template");
 function renderCards(usersArray) {
   cardsContainer.innerHTML = "";
   if (usersArray.length === 0) {
-    statusMessage.textContent = "Данные загружаются...";
+    statusMessage.textContent = "Пользователи отсутствуют";
     return;
   }
 
@@ -15,10 +15,10 @@ function renderCards(usersArray) {
 
   usersArray.forEach((user) => {
     const userClone = cardTemplate.content.cloneNode(true);
-    userClone.querySelector(".user-name").textContent = user.name;
-    userClone.querySelector(".user-surname").textContent = user.surname;
-    userClone.querySelector(".user-email").textContent = user.email;
-    userClone.querySelector(".user-age").textContent = user.age;
+    userClone.querySelector("#user-name").textContent = user.name;
+    userClone.querySelector("#user-surname").textContent = user.surname;
+    userClone.querySelector("#user-email").textContent = user.email;
+    userClone.querySelector("#user-age").textContent = user.age;
     const imgElement = userClone.querySelector(".user-image");
     if (imgElement) {
       imgElement.src = user.image;
@@ -54,7 +54,7 @@ function getUsers() {
       .catch((error) => {
         statusMessage.textContent = error.message;
       });
-  }, 1000);
+  }, 1800);
 }
 
 function deleteCard(id) {

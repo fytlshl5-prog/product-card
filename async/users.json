@@ -5,7 +5,7 @@
     "name": "Амина",
     "surname": "Биляева",
     "email" : "mochk@yandex.ru",
-    "age": "22 лет",
+    "age": 22,
     "image" : "./user.png"
     },
     {
@@ -13,7 +13,7 @@
     "name": "Зейнеп",
     "surname": "Наимова",
     "email" : "katts@email.com",
-    "age": "20 лет",
+    "age": 24,
     "image" : "./user.png"
     },
     {
@@ -21,7 +21,7 @@
     "name": "Ангелина",
     "surname": "Самвелова",
     "email" : "angelicc@gmail.com",
-    "age": "19 лет",
+    "age": 19,
     "image" : "./user.png"
     }
   ]
